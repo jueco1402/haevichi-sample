@@ -15,9 +15,9 @@
 
 <body>
     <!-- skip -->
-     <div class="skip-nav">
+    <div class="skip-nav">
         <a href="#main">본문 바로가기</a>
-     </div>
+    </div>
     <!-- 1. header -->
     <header>
         <div class="sub-bg"></div>
@@ -1124,9 +1124,25 @@
         });
         var swiper = new Swiper('.dining-list-wrap', {
             loop: true,
-            slidesPerView: 2.5,
-            spaceBetween: 24,
-            centeredSlides: true,
+            slidesPerView: 2.4,
+            spaceBetween: 12,
+            // centeredSlides: true,
+            breakpoints: {
+                // 640: {
+                //     slidesPerView: 2,
+                //     spaceBetween: 20,
+                // },
+                768: {
+                    // slidesPerView: 2.4,
+                    spaceBetween: 16,
+                    centeredSlides: true,
+                },
+                1024: {
+                    // slidesPerView: 2.4,
+                    spaceBetween: 24,
+                    centeredSlides: true,
+                },
+            },
         });
         var swiper = new Swiper('.room-type-resort', {
             effect: 'fade',
